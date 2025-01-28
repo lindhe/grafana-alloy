@@ -46,7 +46,7 @@ func Test_getCollectors(t *testing.T) {
 
 func TestName(t *testing.T) {
 	var exampleDBO11yAlloyConfig = `
-		data_source_name = "root:secret_password@tcp(localhost:3306)/mydb"
+		data_source_name = "sqlmockdb0/"
 		forward_to = []
 		enable_collectors = ["QuerySample", "SchemaTable"]
 	`
