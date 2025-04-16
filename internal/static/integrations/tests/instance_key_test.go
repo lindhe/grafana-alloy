@@ -244,7 +244,7 @@ func TestInstanceKey(t *testing.T) {
 				DataSourceName: "user:pass@tcp(host01:3306)/dbname?timeout=5s",
 			},
 			agentKey: "test-agent",
-			expected: "host01:3306/dbname",
+			expected: "tcp(host01:3306)/dbname",
 		},
 		{
 			name: "node_exporter",
