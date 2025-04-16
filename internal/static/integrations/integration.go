@@ -5,6 +5,7 @@ import (
 	"net/http"
 
 	"github.com/go-kit/log"
+
 	"github.com/grafana/alloy/internal/static/integrations/config"
 )
 
@@ -18,7 +19,7 @@ type Config interface {
 	// used to populate the value of the `instance` label for metrics.
 	//
 	// InstanceKey is given an agentKey that represents the agent process. This
-	// may be used if the integration being configured applies to an entire
+	// may be used if the integration being configured applies to an entire local
 	// machine.
 	//
 	// This method may not be invoked if the instance key for a Config is
