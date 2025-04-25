@@ -24,6 +24,11 @@ services:
       - "4320:4318"    # otlp http
       - "9411:9411"    # zipkin
 
+  pyroscope:
+    image: grafana/pyroscope:latest
+    ports:
+    - 4040:4040
+
   zookeeper:
     image: confluentinc/cp-zookeeper:latest
     environment:
